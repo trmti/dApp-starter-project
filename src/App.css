@@ -1,34 +1,31 @@
-.mainContainer {
-  display: flex;
-  justify-content: center;
+@import '~antd/dist/antd.css';
+
+header {
   width: 100%;
-  margin-top: 64px;
+  height: 40px;
+  border-bottom: 1px solid rgb(208 214 218);
+}
+header p {
+  margin-left: 100px;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.dataContainer {
+.wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 600px;
+  width: 100%;
 }
 
-.header {
-  text-align: center;
-  font-size: 32px;
-  font-weight: 600;
+.groups {
+  width: 300px;
+  height: calc(100vh - 40px);
+  border-right: 1px solid rgb(208 214 218);
+  overflow-y: scroll;
 }
 
-.bio {
-  text-align: center;
-  color: gray;
-  margin-top: 16px;
-}
-
-.waveButton {
-  cursor: pointer;
-  margin-top: 16px;
-  padding: 8px;
-  border: 0;
-  border-radius: 5px;
-  
+.chat {
+  width: calc(100% - 300px);
+  height: calc(100vh - 40px);
+  overflow-y: hidden;
 }
