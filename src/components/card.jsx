@@ -5,7 +5,6 @@ const Card = ({ group, isSelected, onClick }) => {
   return (
     <div className={isSelected ? 'card selected' : 'card'} onClick={onClick}>
       <p className="name">{group.groupName}</p>
-      <p>sample</p>
     </div>
   );
 };
