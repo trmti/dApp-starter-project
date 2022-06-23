@@ -1,18 +1,22 @@
-# Create your first dApp.
+# lazy Chat
 
-![](public/ETH-banner-blur.png)
+Line やチャットアプリの通知を気にして今目の前にいる人や、やらなければいけないことから意識がそれていませんか？
 
-このコースを始めるには、下記のステップを実行してください。
+lazy Chat は送信に手数料がかかる、送信にタイムラグがあるといったブロックチェーンアプリ特有の不便利な要素を生かした不便利なアプリです。
 
-1. あなたのGithubアカウントにこのレポジトリをフォークしましょう。
+このアプリを使って"今"に意識を向けましょう！
 
-2. クローンしたレポジトリをあなたのローカル環境にダウンロードしましょう。
+アプリはここから使えます。
+https://d-app-starter-project-trmti.vercel.app/
 
-3. ターミナルを開き、ディレクトリのルートで `npm install` を実行します。
+# 開発者へ
 
-4. `npm run start` を実行してプロジェクトを開始します。
+## アプリを起動するには？
 
-5. コーディングを始めましょう。
+このコマンドでアプリが立ち上がります。
 
-----
-Banner logo is created by modifying "ETH diamond" © [Ethereum Foundation](https://ethereum.org/en/assets/) (Licensed under CC BY 4.0).
+```bash
+$ npm start
+```
+
+自分で作成したコントラクトへ接続するには「App.jsx」と「components/Chat.jsx」内の「contractAddress」変数にあなたのコントラクトアドレスをいれ、「utils/WavePortal.json」にあなたの ABI をペーストして下さい。
